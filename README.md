@@ -1,1 +1,2 @@
 # stocks
+basic stock ticker
