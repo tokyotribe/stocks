@@ -13,5 +13,4 @@ for s in stocks:
 		time.sleep(60)
 	url = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=" + s + "&apikey=MX0Z803PT2WLBB1I"
 	data = requests.get(url).json()
-	print(str(data["Global Quote"]["01. symbol"]), str(data["Global Quote"]["05. price"]))
-print(data)
+	print(str(data["Global Quote"]["01. symbol"]), "Price:", str(data["Global Quote"]["05. price"]), "High:", str(data["Global Quote"]["03. high"]), "Low:", str(data["Global Quote"]["04. low"]), "Change:", str(data["Global Quote"]["10. change percent"]))
