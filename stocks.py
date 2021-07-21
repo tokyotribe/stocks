@@ -14,4 +14,3 @@ for s in stocks:
 	url = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=" + s + "&apikey=MX0Z803PT2WLBB1I"
 	data = requests.get(url).json()
 	print(str(data["Global Quote"]["01. symbol"]), str(data["Global Quote"]["05. price"]))
-print(data)
